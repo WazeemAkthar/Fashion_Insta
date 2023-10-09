@@ -16,14 +16,12 @@ function App() {
        <Header />
       <Herosection />
        <Topvalue />
-
-
-       <Explore/>
-       <Footer/>
      <Collection />
       <Shopnow />
       <Contectus />
        <Joinus/>
+       <Explore/>
+       <Footer/>
     
          
     </>
