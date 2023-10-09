@@ -40,6 +40,7 @@ function Footer() {
                   display: "flex",
                   alignItems: "center",
                   width: 400,
+                  height:"50px",
                   borderRadius: "50px",
                   border:"2px solid",
                   color:"white",
