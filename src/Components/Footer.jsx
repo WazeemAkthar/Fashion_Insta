@@ -6,11 +6,9 @@ import {
   InputBase,
   List,
   ListItem,
-
   Typography,
 } from "@mui/material";
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 function Footer() {
   return (
@@ -36,25 +34,168 @@ function Footer() {
               <Box
                 component="form"
                 sx={{
-                 p: "0px 2px",
+                  p: "0px 2px",
                   display: "flex",
                   alignItems: "center",
                   width: 400,
-                  height:"50px",
+                  height: "50px",
                   borderRadius: "50px",
-                  border:"2px solid",
-                  color:"white",
-                  marginLeft:"-10px"
+                  border: "2px solid",
+                  color: "white",
+                  marginLeft: "-10px",
                 }}
               >
                 <InputBase
-                  sx={{ ml: 1, flex: 1, color:"white" }}
+                  sx={{ ml: 1, flex: 1, color: "white" }}
                   placeholder="Type your mail here"
                   inputProps={{ "aria-label": "Type your mail here" }}
                 />
                 <IconButton
                   type="button"
-                  sx={{ p: "10px", borderRadius:"100px", backgroundColor:"orange", "&:hover":{backgroundColor:"orange"} }}
+                  sx={{
+                    p: "10px",
+                    borderRadius: "100px",
+                    backgroundColor: "orange",
+                    "&:hover": { backgroundColor: "orange" },
+                  }}
+                  aria-label="search"
+                >
+                  <ArrowOutwardIcon />
+                </IconButton>
+              </Box>
+              <Box
+                component="button"
+                sx={{
+                  p: "0px 2px",
+                  display: "flex",
+                  alignItems: "center",
+                  width: "fit-content",
+                  height: "30px",
+                  borderRadius: "50px",
+                  border: "2px solid",
+                  color: "white",
+                  backgroundColor: "#320001",
+                  padding:"5px",
+                  marginTop:"60px"
+                }}
+              >
+                <Typography fontSize="10px">Whatsapp</Typography>
+                <IconButton
+                  type="button"
+                  sx={{
+                    p: "10px",
+                    borderRadius: "100px",
+                    Color: "orange",
+                    "&:hover": {
+                      backgroundColor: "none",
+                      p: "10px",
+                      borderRadius: "100px",
+                    },
+                  }}
+                  aria-label="search"
+                >
+                  <ArrowOutwardIcon />
+                </IconButton>
+              </Box>
+              <Box
+                component="button"
+                sx={{
+                  p: "0px 2px",
+                  display: "flex",
+                  alignItems: "center",
+                  width: "fit-content",
+                  height: "30px",
+                  borderRadius: "50px",
+                  border: "2px solid",
+                  color: "white",
+                  backgroundColor: "#320001",
+                  padding:"5px",
+                  marginTop:"60px"
+                }}
+              >
+                <Typography fontSize="10px">Email</Typography>
+                <IconButton
+                  type="button"
+                  sx={{
+                    p: "10px",
+                    borderRadius: "100px",
+                    Color: "orange",
+                    "&:hover": {
+                      backgroundColor: "none",
+                      p: "10px",
+                      borderRadius: "100px",
+                    },
+                  }}
+                  aria-label="search"
+                >
+                  <ArrowOutwardIcon />
+                </IconButton>
+              </Box>
+
+              <Box
+                component="button"
+                sx={{
+                  p: "0px 2px",
+                  display: "flex",
+                  alignItems: "center",
+                  width: "fit-content",
+                  height: "30px",
+                  borderRadius: "50px",
+                  border: "2px solid",
+                  color: "white",
+                  backgroundColor: "#320001",
+                  padding:"5px",
+                  marginTop:"60px"
+                }}
+              >
+                <Typography fontSize="10px">Twitter</Typography>
+                <IconButton
+                  type="button"
+                  sx={{
+                    p: "10px",
+                    borderRadius: "100px",
+                    Color: "orange",
+                    "&:hover": {
+                      backgroundColor: "none",
+                      p: "10px",
+                      borderRadius: "100px",
+                    },
+                  }}
+                  aria-label="search"
+                >
+                  <ArrowOutwardIcon />
+                </IconButton>
+              </Box>
+
+              <Box
+                component="button"
+                sx={{
+                  p: "0px 2px",
+                  display: "flex",
+                  alignItems: "center",
+                  width: "fit-content",
+                  height: "30px",
+                  borderRadius: "50px",
+                  border: "2px solid",
+                  color: "white",
+                  backgroundColor: "#320001",
+                  padding:"5px",
+                  marginTop:"60px"
+                }}
+              >
+                <Typography fontSize="10px">Instagram</Typography>
+                <IconButton
+                  type="button"
+                  sx={{
+                    p: "10px",
+                    borderRadius: "100px",
+                    Color: "orange",
+                    "&:hover": {
+                      backgroundColor: "none",
+                      p: "10px",
+                      borderRadius: "100px",
+                    },
+                  }}
                   aria-label="search"
                 >
                   <ArrowOutwardIcon />
