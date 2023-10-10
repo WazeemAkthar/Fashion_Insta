@@ -3,6 +3,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import "./Styles/Imageslider.css";
 import sliderimages from "./Imagesliderdata";
+import { Typography } from "@mui/material";
 
 const Imageslider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -81,6 +82,7 @@ const Imageslider = ({ slides }) => {
               {index === current && (
                 <img src={slide.img} alt="" className="image" />
               )}
+               <Typography variant="h2" fontFamily="times new roman" className="title"> FASHIONINSTA </Typography>
             </div>
           </>
         );

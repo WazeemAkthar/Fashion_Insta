@@ -11,6 +11,7 @@ import React from "react";
 import HeroImageslider from "./Imageslider";
 import sliderimages  from "./Imagesliderdata";
 
+
 const Herosection = () => {
   return (
     <React.Fragment>
@@ -104,6 +105,7 @@ const Herosection = () => {
       </Container>
       <Box>
         <HeroImageslider slides={sliderimages} />
+       
       </Box>
     </React.Fragment>
   );
