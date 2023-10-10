@@ -25,7 +25,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
 }));
 
 const box = {
-  padding: "2px",
+  padding: "5px",
   margin: "6px",
 };
 
@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <AppBar sx={{ backgroundColor: "white", boxShadow: "none", position:"sticky" }}>
+      <AppBar sx={{ backgroundColor: "white", boxShadow: "none", position:"sticky", marginTop:"10px"}}>
         <Container >
           <Toolbar
             sx={{
@@ -44,7 +44,7 @@ const Header = () => {
               alignItems: "center",
               display: { xs: "none", md: "flex", xl:"flex" },
               flexDirection: "row",
-              
+              paddingLeft:"0px", paddingRight:"0px"
               
             }}
           >
@@ -56,12 +56,12 @@ const Header = () => {
                 <Box
                   sx={{
                     background: "#331D2C",
-                    borderRadius: "6px",
+                    borderRadius: "16px",
                     width: "fit-content",
                     display: "flex",
                   }}
                 >
-                  <Box sx={{ padding: "2px", margin: "6px" }}>
+                  <Box sx={{ padding: "5px", margin: "6px" }}>
                     <ColorButton>Home</ColorButton>
                   </Box>
                   <Box style={box}>
@@ -76,9 +76,9 @@ const Header = () => {
                   <Box
                     sx={{
                       padding: "2px",
-                      borderRadius: "6px",
+                      borderRadius: "10px",
                       backgroundColor: "#bf360c",
-                      margin: "6px",
+                      margin: "10px",
                     }}
                   >
                     <ColorButton>LOGIN</ColorButton>
@@ -87,10 +87,14 @@ const Header = () => {
               </Grid>
             </Grid>
           </Toolbar>
+
+          {/* Header Responsive */}
+
           <Toolbar
             sx={{ 
               display: { md: "none", xs: "flex" },
               justifyContent: "space-between",
+              paddingLeft:"0px", paddingRight:"0px"
             }}
           >
             <Typography sx={{ color: "black", marginRight: "auto" }}>

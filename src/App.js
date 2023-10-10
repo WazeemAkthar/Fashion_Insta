@@ -13,17 +13,15 @@ import "./App.css";
 function App() {
   return (
     <>
-       <Header />
-      <Herosection />
-       <Topvalue />
-     <Collection />
+      <Header />
+    <Herosection />
+      <Topvalue />
+    <Collection />
       <Shopnow />
       <Contectus />
        <Joinus/>
        <Explore/>
        <Footer/>
-    
-         
     </>
   );
 }

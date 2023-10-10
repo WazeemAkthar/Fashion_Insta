@@ -4,11 +4,11 @@ export default function Shop() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   return (
     <Box
-      sx={{
-        justifyContent: "center",
-        marginX: { xs: "5%", sm: "5%" },
-        marginTop: { xs: "0%", sm: "2%" },
-      }}
+    sx={{
+      justifyContent: "center",
+      marginX: { xs: "5%", sm: "5%" },
+      marginTop: { xs: "5%", sm: "10%" },
+    }}
     >
       <Container
         sx={

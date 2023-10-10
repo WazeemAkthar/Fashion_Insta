@@ -8,8 +8,6 @@ import {
   useMediaQuery,
   Button,
   styled,
-  CardMedia,
-  Card,
 } from "@mui/material";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
@@ -17,9 +15,10 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import { deepOrange } from "@mui/material/colors";
-// import mail from "../Images/Icons/mail.png";
-// import telephone from "../Images/Icons/telephone.png";
-// import placeholder from "../Images/Icons/placeholder.png";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(deepOrange[500]),
@@ -36,10 +35,11 @@ const Contectus = () => {
   return (
     <React.Fragment>
       <Box
-        sx={{
-          marginX: { xs: "5%", sm: "5%" },
-          marginTop: { xs: "0%", sm: "2%" },
-        }}
+       sx={{
+        justifyContent: "center",
+        marginX: { xs: "5%", sm: "5%" },
+        marginTop: { xs: "5%", sm: "10%" },
+      }}
       >
         <Container sx={{ marginTop: "5%" }}>
           <Box>
@@ -47,12 +47,12 @@ const Contectus = () => {
               sx={{
                 fontFamily: "RobotoSlab-Black",
                 fontSize: { xs: "25px", sm: "35px" },
-                fontWeight: "500",
+                fontWeight: "600",
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              Contect Us
+              Contact Us
             </Typography>
 
             <Typography
@@ -73,34 +73,56 @@ const Contectus = () => {
 
           <Box sx={{ marginTop: "80px" }}>
             <Grid container spacing={2}>
-              <Grid container md={4} spacing={2} direction="column">
-                <Grid container spacing={3} marginTop="2px">
-                  <Grid item md={2}>
-                    <Card sx={{ boxShadow: "none" }}>
-                      <CardMedia
-                        sx={{ width: 50, height: 50, border: "1px" }}
-                        image="/Images/Icons/telephone.png"
-                      />
-                    </Card>
+              <Grid item container md={4} spacing={2} direction="column">
+                <Grid container spacing={3}>
+                  <Grid
+                    item
+                    container
+                    md={2}
+                    sx={{ justifyContent: "space-around", marginLeft:"5px" }}
+                  >
+                    <Box
+                      sx={{
+                        border: "2px solid",
+                        borderRadius: "5px",
+                        display: "flex",
+                        alignItems: "center",
+                        padding: "5px",
+                        height: "fit-content",
+                      }}
+                    >
+                      <PhoneInTalkIcon fontSize="large" color="#FFA500" />
+                    </Box>
                   </Grid>
 
-                  <Grid item md={8}>
+                  <Grid item md={8} xs={12} sx={{textAlign:{xs:"center", sm:"left"}}}>
                     <Typography component="div">Phone Number</Typography>
                     <Typography variant="h6">077 4588 728</Typography>
                   </Grid>
                 </Grid>
 
                 <Grid container spacing={2} marginTop="2px">
-                  <Grid item md={2}>
-                    <Card sx={{ boxShadow: "none" }}>
-                      <CardMedia
-                        sx={{ width: 50, height: 50, border: "1px" }}
-                        image="/Images/Icons/mail.png"
-                      />
-                    </Card>
+                  <Grid
+                    item
+                    container
+                    md={2}
+                    sx={{ justifyContent: "space-around" }}
+                  >
+                    <Box
+                      sx={{
+                        border: "2px solid",
+                        borderRadius: "5px",
+                        display: "flex",
+                        alignItems: "center",
+                        padding: "5px",
+                        height: "fit-content",
+                      }}
+                    >
+                      <EmailIcon fontSize="large" color="#FFA500" />
+                    </Box>
                   </Grid>
 
-                  <Grid item md={8}>
+                  <Grid item md={8} xs={12} sx={{textAlign:{xs:"center", sm:"left"}}}>
                     <Typography component="div">Email Address</Typography>
                     <Typography variant="h6">
                       contect@fashioninsta.com
@@ -109,16 +131,27 @@ const Contectus = () => {
                 </Grid>
 
                 <Grid container spacing={2} marginTop="2px">
-                  <Grid item md={2}>
-                    <Card sx={{ boxShadow: "none" }}>
-                      <CardMedia
-                        sx={{ width: 50, height: 50, border: "1px" }}
-                        image="/Images/Icons/placeholder.png"
-                      />
-                    </Card>
+                  <Grid
+                    item
+                    container
+                    md={2}
+                    sx={{ justifyContent: "space-around" }}
+                  >
+                    <Box
+                      sx={{
+                        border: "2px solid",
+                        borderRadius: "5px",
+                        display: "flex",
+                        alignItems: "center",
+                        padding: "5px",
+                        height: "fit-content",
+                      }}
+                    >
+                      <LocationOnIcon fontSize="large" color="#FFA500" />
+                    </Box>
                   </Grid>
 
-                  <Grid item md={8}>
+                  <Grid item md={8} xs={12} sx={{textAlign:{xs:"center", sm:"left"}}}>
                     <Typography component="div">Location</Typography>
                     <Typography variant="h6">Londan, United Kingdom</Typography>
                   </Grid>
@@ -126,6 +159,7 @@ const Contectus = () => {
               </Grid>
 
               <Grid container md={8} spacing={2}>
+                             
                 <Grid item md={6} xs={12} sx={{ objectFit: "cover" }}>
                   <TextField
                     label="First Name"
@@ -167,6 +201,7 @@ const Contectus = () => {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
+                 
                   <FormControl>
                     <FormLabel id="row-radio-buttons-group-label">
                       Gender
@@ -188,6 +223,7 @@ const Contectus = () => {
                       />
                     </RadioGroup>
                   </FormControl>
+                 
                 </Grid>
 
                 <Grid item md={12} xs={12}>
@@ -201,8 +237,11 @@ const Contectus = () => {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
-                  <ColorButton fullWidth>Submit</ColorButton>
+                  <ColorButton type="submit" fullWidth>
+                    Submit
+                  </ColorButton>
                 </Grid>
+              
               </Grid>
             </Grid>
           </Box>

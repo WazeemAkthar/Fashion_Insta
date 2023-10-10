@@ -16,7 +16,7 @@ export default function MediaCard() {
         sx={{
           justifyContent: "center",
           marginX: { xs: "5%", sm: "5%" },
-          marginTop: { xs: "0%", sm: "2%" },
+          marginTop: { xs: "5%", sm: "10%" },
         }}
       >
         <Container>
@@ -25,7 +25,7 @@ export default function MediaCard() {
               sx={{
                 fontFamily: "RobotoSlab-Black",
                 fontSize: { xs: "35px", sm: "45px" },
-                fontWeight: "500",
+                fontWeight: "600",
                 display: "flex",
                 justifyContent: "center",
               }}

@@ -19,10 +19,11 @@ const Explore = () => {
   return (
     <React.Fragment>
       <Box
-        sx={{
-          marginX: { xs: "5%", sm: "5%" },
-          marginTop: { xs: "0%", sm: "2%" },
-        }}
+       sx={{
+        justifyContent: "center",
+        marginX: { xs: "5%", sm: "5%" },
+        marginTop: { xs: "5%", sm: "10%" },
+      }}
       >
         <Container sx={{ marginTop: "5%" }}>
           <Box>
@@ -30,7 +31,7 @@ const Explore = () => {
               sx={{
                 fontFamily: "RobotoSlab-Black",
                 fontSize: { xs: "25px", sm: "35px" },
-                fontWeight: "500",
+                fontWeight: "600",
                 display: "flex",
                 justifyContent: "center",
               }}

@@ -31,9 +31,10 @@ const Joinus = () => {
     <React.Fragment>
       <Box
         sx={{
-          backgroundColor: "#FFF4F2",
-          marginTop: { xs: "5%", sm: "6%" },
-          padding: "80px",
+          justifyContent: "center",
+          marginX: { xs: "5%", sm: "5%" },
+          marginTop: { xs: "5%", sm: "10%" },
+          padding:"80px"
         }}
       >
         <Container>
@@ -42,7 +43,7 @@ const Joinus = () => {
               sx={{
                 fontFamily: "RobotoSlab-Black",
                 fontSize: { xs: "35px", sm: "45px" },
-                fontWeight: "500",
+                fontWeight: "600",
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -76,7 +77,7 @@ const Joinus = () => {
                   />
                 </Card>
               </Grid>
-              <Grid item xs={9} container spacing={1} direction="column">
+              <Grid item xs={9} container spacing={1} direction="column" flexWrap="nowrap">
                 <Grid item xs={3}>
                   <Typography
                     variant="h4"
@@ -86,7 +87,7 @@ const Joinus = () => {
                     Sales Consultens
                   </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} sx={{overflowY:{xs:"clip", sm:"unset"}}}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Assumenda ratione eaque iure repellendus nostrum saepe, itaque
                   nihil sint, molestias accusantium minima reiciendis ipsa
@@ -119,7 +120,7 @@ const Joinus = () => {
                   />
                 </Card>
               </Grid>
-              <Grid item xs={9} container spacing={1} direction="column">
+              <Grid item xs={9} container spacing={1} direction="column" flexWrap="nowrap">
                 <Grid item xs={3}>
                   <Typography
                     variant="h4"
@@ -129,7 +130,7 @@ const Joinus = () => {
                     Account Executive
                   </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} sx={{overflowY:{xs:"clip", sm:"unset"}}}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Assumenda ratione eaque iure repellendus nostrum saepe, itaque
                   nihil sint, molestias accusantium minima reiciendis ipsa
@@ -162,7 +163,7 @@ const Joinus = () => {
                   />
                 </Card>
               </Grid>
-              <Grid item xs={9} container spacing={1} direction="column">
+              <Grid item xs={9} container spacing={1} direction="column" flexWrap="nowrap">
                 <Grid item xs={3}>
                   <Typography
                     variant="h4"
@@ -172,7 +173,7 @@ const Joinus = () => {
                     Sales Representative
                   </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} sx={{overflowY:{xs:"clip", sm:"unset"}}}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Assumenda ratione eaque iure repellendus nostrum saepe, itaque
                   nihil sint, molestias accusantium minima reiciendis ipsa

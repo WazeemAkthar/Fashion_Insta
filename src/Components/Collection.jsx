@@ -17,13 +17,17 @@ const Collection = () => {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   return (
     <React.Fragment>
-      <Container sx={{ marginTop: "20px" }}>
-        <Box>
+      <Container >
+        <Box sx={{
+          justifyContent: "center",
+          marginX: { xs: "5%", sm: "5%" },
+          marginTop: { xs: "5%", sm: "10%" },
+        }}>
           <Typography
             sx={{
               fontFamily: "RobotoSlab-Black",
               fontSize: { xs: "25px", sm: "35px" },
-              fontWeight: "500",
+              fontWeight: "600",
               display: "flex",
               justifyContent: "center",
             }}
